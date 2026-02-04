@@ -36,11 +36,11 @@ btns.forEach(btn => {
             }
             pastValue.textContent = currentValue.textContent;
             currentValue.textContent = math.evaluate(currentValue.textContent);
-        } /*else if(btn.textContent == "×") {
+        } else if(btn.textContent == "×") {
             currentValue.textContent += "*";
         } else if(btn.textContent == "÷") {
             currentValue.textContent += "/";
-        }*/else if(btn.classList.contains("del")) {
+        }else if(btn.classList.contains("del")) {
             currentValue.textContent = currentValue.textContent.toString().slice(0,-1);
         } else {
             currentValue.textContent += btn.textContent;
